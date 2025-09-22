@@ -3,12 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Halaman Contact</title>
+  <title>Contact Us - PT Berkah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0b79d0;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    form button {
+      background: #0b79d0;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover {
+      background: #095c9e;
+    }
+    .info {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Hubungi Kami</h1>
+    <form onsubmit="alert('Pesan berhasil dikirim!'); return false;">
+      <label for="name">Nama</label>
+      <input type="text" id="name" name="name" required>
 
-  <h1>Halo, dunia!</h1>
-  <p>Ini adalah halaman Contact</p>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
+      <label for="message">Pesan</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+
+    <div class="info">
+      <p><strong>Alamat Kantor:</strong><br>
+      Jl. Contoh No. 123, Jakarta</p>
+      <p><strong>Telepon:</strong> (021) 123-4567<br>
+      <strong>Email:</strong> info@ptberkah.co.id</p>
+    </div>
+  </div>
 </body>
 </html>
